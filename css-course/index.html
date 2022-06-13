@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /*Universal selector*/
+        /*
+        * {
+            background: red;
+        }
+        */
+        div {
+            background: yellow;
+        }
+
+        /*Class selector*/
+        .green {
+            background: green;
+        }
+
+        /*ID selector*/
+        #blue {
+            background: blue
+        }
+
+        /*Combine selector*/
+        span, ol {
+            background: pink;
+        }
+        div.red.green-text {
+            background: red;
+            color: green;
+        }
+        li b {
+            background: black;
+            color: red;
+        }
+        span > b {
+            background: orange;
+        }
+
+        li.liitem + li {
+            background: red;
+        }
+        li:hover {
+            background: red;
+        }
+        input:disabled{
+            margin: 50px;
+        }
+        li.grey:first-child{
+            background: grey;
+        }
+        b::before{
+            content: "Before";
+            background: red;
+        }
+        b::after{
+            content: "After";
+            background: greenyellow;
+        }
+        [data-red]{
+            background: red;
+        }
+        [data-red="true"]{
+            background: grey;
+        }
+        [data-red^="23"]{
+            background: green;
+        }
+        [data-red$="123"]{
+            background: orange;
+        }
+        [data-red*="223"]{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>This is a div</div>
+    <div class="red green-text">This is a second div</div>
+    <span>This is a span</span>
+    <ul>
+        <li class="green">Item 1</li>
+        <li ID="blue">Item 2</li>
+        <li><span><b>Item 3</b></span></li>
+        <li><b>Item 4</b></li>
+    </ul>
+    <ol>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+    </ol>
+
+    <div>
+        <span>
+            <b> Bold text</b>
+        </span>
+    </div>
+    <b>Text</b>
+    <ol>
+        <li class="liitem">Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+    </ol>
+    
+    <input disabled type="checkbox">
+    <ul>
+        <li class="grey">Item 5</li>
+        <li data-red="123">Item 6</li>
+        <li data-red>Item 7</li>
+        <li data-red="23">Item 8</li>
+    </ul>
+    
+</body>
+</html>
