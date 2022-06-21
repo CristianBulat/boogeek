@@ -137,3 +137,186 @@ body {
 .sea .torpedo.reverse .tail-h{
     z-index: 1;
 }
+
+.ship {
+    background: white;
+    position: relative;
+    width: 900px;
+    height: 450px;
+    border: 1px solid red;
+}
+
+/* ship-platform */
+
+.ship .platform-bottom{
+    position: absolute;
+
+    width: 700px;
+    height: 60px;
+    background-color: darkred;
+
+    border-bottom-right-radius: 100px;
+    background-image: linear-gradient(grey 50%, darkred 50%);
+}
+.ship .platform-gradient{
+    position: absolute;
+    background-image: radial-gradient(white 50%, transparent 50%);
+    background-size: 500px, 500px;
+    background-position: -303px 50px;
+    background-repeat: no-repeat;
+}
+
+.ship .ship-middle{
+    position: absolute;
+    width: 400px;
+    height: 25px;
+
+    top: -85px;
+    left: 50px;
+    background-color: rgb(187, 187, 187);
+}
+.ship .ship-middle::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: inherit;
+    width: 20px;
+    left: -20px;
+
+    background-image: linear-gradient(300deg, rgb(187, 187, 187) 50%, transparent 50%);
+
+}
+.ship .ship-middle::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: inherit;
+    width: 20px;
+    right: -20px;
+
+    background-image: linear-gradient(70deg, rgb(187, 187, 187) 50%, transparent 50%);
+
+}
+
+
+/* arm-elements*/
+
+.ship .arm-element .arm{
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    background-color: rgb(187, 187, 187);
+    top: -75px;
+    left: -530px;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+}
+.ship .arm-element .arm-v{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: rgb(187, 187, 187);
+    transform: rotate(20deg);
+    top: -85px;
+    left: -600px;
+}
+.ship .arm-element .arm.second{
+    top: -75px;
+    right: -1100px;
+}
+
+.ship .arm-element .arm-v.second{
+    transform: rotate(160deg);
+    top: -85px;
+    right: -1240px;
+}
+.ship .arm-element .arm.third{
+    top: -125px;
+    left: -180px;
+}
+.ship .arm-element .arm-v.third{
+    top: -140px;
+    left: -250px;
+}
+
+/* command-post elements */
+
+.ship .command-post .command-1{
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    top: -130px;
+    right: -170px;
+    background-color:grey;
+}
+.ship .command-post .command-1::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: inherit;
+
+    width: 30px;
+    left: -30px;
+    background-image: linear-gradient(310deg, grey 50%, transparent 50%);
+}
+
+.ship .command-post .command-1::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: inherit;
+
+    width: 20px;
+    right: -20px;
+    background-image: linear-gradient(60deg, grey 50%, transparent 50%);
+}
+.ship .command-post .command-2{
+    position: absolute;
+    width: 120px;
+    height: 15px;
+    top: -165px;
+    right: -155px;
+    background-color:rgb(187, 187, 187);
+}
+.ship .command-post .command-2::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: inherit;
+
+    width: 20px;
+    right: -20px;
+    background-image: linear-gradient(70deg, rgb(187, 187, 187) 50%, transparent 50%);
+}
+.ship .command-post .command-3{
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    background-color: rgb(187, 187, 187);
+    top: -280px;
+    right: -140px;
+}
+.ship .command-post .command-4{
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    background-color: grey;
+    top: -210px;
+    right: -70px;
+}
+.ship .command-post .command-5{
+    position: absolute;
+    width: 25px;
+    height: 40px;
+    background-color: grey;
+    top: -220px;
+    right: -220px;
+}
+.ship .command-post .command-6{
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background-color: grey;
+    top: -380px;
+    right: -140px;
+}
