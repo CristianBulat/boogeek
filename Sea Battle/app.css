@@ -320,3 +320,42 @@ body {
     top: -380px;
     right: -140px;
 }
+.scope {
+    --scope-color: #4F48;
+
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--scope-color);
+    border-radius: 50%;
+    color: var(--scope-color);
+    font-size: 40px;
+    position: relative
+}
+
+.scope .mid {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+    text-align: center;
+    line-height: 200px;
+}
+
+.scope .h {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+
+    line-height: 193px;
+    letter-spacing: 174px;
+}
+
+.scope .v {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+
+    line-height: 208px;
+    letter-spacing: 174px;
+    writing-mode: vertical-lr;
+}
