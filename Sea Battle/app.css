@@ -381,7 +381,7 @@ body {
     z-index: 1;
 
     background-repeat: no-repeat;
-    animation: fire-sm 2s linear;
+    animation: fire-sm 1s linear;
     animation-fill-mode: forwards;
     background-position-x: center;
 }
@@ -397,9 +397,11 @@ body {
     background-repeat: no-repeat;
     background-image: radial-gradient(rgb(223, 110, 18), transparent 70%);
 
-    animation: fire-md 3s linear;
+    animation: fire-md 2s linear;
     animation-fill-mode: forwards;
     background-position-x: center;
+    /*animation-delay: 0.3s;
+    opacity: 0;*/
 }
 
 @keyframes fire-sm {
@@ -425,18 +427,18 @@ body {
 
 @keyframes fire-md {
     0% {
-        background-position-y: 100px;
         background-size: 0 0;
+        background-position-y: 200px;
         opacity: 0;
     }
-    15% {
+    60% {
         background-position-y: 0px;
         background-size: 100% 100%;
         opacity: 1;
     }
     100% {
-        background-position-y: 250px;
-        background-size: 150% 20%;
+        background-position-y: 100px;
+        background-size: 100% 100%;
         opacity: 0;
     }
 }
