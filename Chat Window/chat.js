@@ -22,7 +22,9 @@ function closeChat() {
 
 function sendMessage() {
   const boxvalue = document.getElementsByClassName('text-input');
-  messages.push(boxvalue[0].value);
-  console.log(messages);
-  boxvalue[0].value = '';
+  if(boxvalue[0].value.length > 0){
+    messages.push(boxvalue[0].value);
+    console.log(messages);
+    boxvalue[0].value = '';
+  }
 }
